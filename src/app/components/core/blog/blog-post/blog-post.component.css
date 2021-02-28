@@ -1,0 +1,31 @@
+.image {
+  position: relative;
+}
+.image img {
+  -webkit-box-shadow: 5px 10px 35px #333;
+  -moz-box-shadow: 5px 10px 35px #333;
+  -ms-box-shadow: 5px 10px 35px #333;
+  -o-box-shadow: 5px 10px 35px #333;
+  box-shadow: 5px 10px 35px #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.image span {
+  position: absolute;
+  z-index: 1;
+  background-color: #313131;
+  color: #FFF;
+  right: 15px;
+  top: 30px;
+  padding: 5px 15px;
+  -webkit-border-radius: 15px 0 0;
+  -moz-border-radius: 15px 0 0;
+  -ms-border-radius: 15px 0 0;
+  -o-border-radius: 15px 0 0;
+  border-radius: 15px 0 0;
+}
+
+/*# sourceMappingURL=blog-post.component.css.map */

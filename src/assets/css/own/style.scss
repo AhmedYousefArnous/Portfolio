@@ -1,0 +1,22 @@
+//helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/classes";
+
+@import "layout/grid";
+@import "pages/global";
+
+
+// Components
+@import "components/buttons";
+@import "components/headings";
+
+
+// layout
+@import "layout/header";
+@import "pages/home";
+@import "layout/footer";
+
+.badge {
+  font-size: 110%;
+}

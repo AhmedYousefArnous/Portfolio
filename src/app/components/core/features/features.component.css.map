@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,OAAO,CAAC,YAAY;;AACpB,UAAE;EACA,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,YACT;;AACA,UAAE;EACA,UAAU,EAAE,OAAO",
+"sources": ["features.component.scss"],
+"names": [],
+"file": "features.component.css"
+}

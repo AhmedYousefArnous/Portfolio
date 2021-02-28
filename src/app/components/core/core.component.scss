@@ -1,0 +1,22 @@
+@import '../../../assets/css/own/helpers/mixins';
+.card-container {
+  position: relative;
+  z-index: 2;
+  top: -70px;
+  background-color: #FFF;
+  @include prefexir(box-shadow, 5px 5px 50px -10px #333);
+  .personal-image {
+    position: relative;
+    top: -130px;
+  }
+  .description {
+    margin-top: -70px;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+}

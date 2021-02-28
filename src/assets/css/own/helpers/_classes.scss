@@ -1,0 +1,15 @@
+// background classes
+@each $key,$val in $colors-list {
+    .bg-#{$key}
+        {
+            background-color: #{$val};
+			color: #FFF !important;   
+        }
+}
+// clors classes
+@each $key,$val in $colors-list {
+    .text-#{$key}
+        {
+            color: #{$val} !important;
+		}
+}

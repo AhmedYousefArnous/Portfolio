@@ -1,0 +1,15 @@
+@import '../../../assets/css/own/helpers/variables';
+
+.footer {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 26px;
+  margin-top: -70px;
+  background-color: rgba(0,0,0,0.9);
+  @media (max-width: $max-width-xs) {
+    font-size: 16px;
+  }
+  @media (min-width: $min-width-sm) and (max-width: $max-width-sm) {
+    font-size: 20px;
+  }
+}

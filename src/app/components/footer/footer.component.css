@@ -1,0 +1,19 @@
+.footer {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 26px;
+  margin-top: -70px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 576px) {
+  .footer {
+    font-size: 16px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .footer {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=footer.component.css.map */

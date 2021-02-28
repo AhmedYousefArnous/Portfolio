@@ -1,0 +1,45 @@
+@import '../../../../../assets/css/own/helpers/mixins';
+
+.links {
+  --color: transparent;
+li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 3px 15px;
+@include prefexir(border-radius, 15px);
+@include prefexir(box-shadow, 0 3px 10px -3px var(--color));
+@include transitionMe(0.3);
+
+&:first-of-type,
+&:hover{
+   background-color: var(--color);
+   color: #FFF;
+ }
+}
+
+}
+
+.image-container {
+  position: relative;
+  max-height: 300px;
+@include prefexir(box-shadow, 3px 3px 5px #333);
+@include prefexir(border-radius, 10px);
+  overflow: hidden;
+.desc {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #FFF;
+}
+
+&::after{
+ @include overlay;
+   background-color: rgba(0,0,0,.7);
+   z-index: 1;
+ }
+}

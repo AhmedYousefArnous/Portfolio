@@ -1,0 +1,40 @@
+@import '../../../assets/css/own/helpers/mixins';
+@import '../../../assets/css/own/helpers/variables';
+.header {
+  min-height: 350px;
+  z-index: 0;
+  position: relative;
+  @extend %cover;
+  background: url('assets/img/city.jpg') no-repeat center center fixed ;
+  color: #FFF;
+  font-weight: bold;
+
+  .links {
+    font-size: 22px;
+    z-index: 3;
+    li {
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 15px;
+      a {
+        --color: transparent;
+        color: #FFF;
+        &:hover {
+          color: var(--color);
+        }
+      }
+    }
+    @media (max-width: $max-width-xs) {
+      display: none !important;
+    }
+    @media (min-width: $min-width-sm) and (max-width: $max-width-sm) {
+      font-size: 16px;
+    }
+
+  }
+  &::after {
+    @include overlay;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+}

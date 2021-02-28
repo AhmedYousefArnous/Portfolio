@@ -1,0 +1,11 @@
+.feature {
+  --color: transparent;
+  i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--color)
+  }
+  p {
+    text-align: justify;
+  }
+}

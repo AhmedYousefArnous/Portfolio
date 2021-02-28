@@ -1,0 +1,32 @@
+/* global */
+body {
+    background-color: #e2e2e2;
+    font: {
+        family: 'Times New Roman',Tahoma,Arial;
+        size:16px;
+    }
+
+
+}
+
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;        
+    }
+}
+
+input,
+input:focus {
+    outline: none
+}
+
+hr {
+    width: 30%;
+    margin: 50px auto
+}

@@ -1,0 +1,13 @@
+.feature {
+  --color: transparent;
+}
+.feature i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--color);
+}
+.feature p {
+  text-align: justify;
+}
+
+/*# sourceMappingURL=features.component.css.map */

@@ -1,0 +1,11 @@
+.social-links li {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 26px;
+}
+.social-links li a {
+  color: #333;
+}
+
+/*# sourceMappingURL=personal.component.css.map */

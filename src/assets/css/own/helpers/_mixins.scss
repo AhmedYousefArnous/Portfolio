@@ -1,0 +1,50 @@
+// Class for background-size => cover
+%cover {
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+// mixin for overlay effect
+@mixin overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+}
+// Prefexir
+@mixin prefexir($prop,$value) {
+    -webkit-#{$prop}: $value;
+    -moz-#{$prop}: $value;
+    -ms-#{$prop}: $value;
+    -o-#{$prop}: $value;
+    #{$prop}: $value;
+}
+// animation mixins
+@mixin keyFrame ($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+// transition mixin
+@mixin transitionMe($second){
+	@include prefexir(transition,all #{$second}s ease-in-out);
+}
+// make opacity effect to support IE 7
+@mixin opacityMe ($rate){
+    zoom: 1;
+    opacity: $rate;
+    filter: alpha(opacity=$rate * 100);
+}
+
+

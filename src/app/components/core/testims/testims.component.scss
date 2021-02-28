@@ -1,0 +1,25 @@
+@import '../../../../assets/css/own/helpers/mixins';
+
+.image {
+  --color: transparent;
+  img {
+    @include prefexir(box-shadow, 2px 2px 5px var(--color));
+  }
+}
+.desc {
+  --color: transparent;
+  background-color: var(--color);
+  color: #FFF;
+  position: relative;
+  top: 35px;
+  padding: 10px 20px;
+  border-radius: 25px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -21px;
+    border: 11px solid;
+    border-color: #FFF var(--color) #FFF #FFF;
+  }
+}

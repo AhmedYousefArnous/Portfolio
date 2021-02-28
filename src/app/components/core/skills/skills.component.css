@@ -1,0 +1,52 @@
+.head-with-bottom-border {
+  --color: transparent;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color);
+  position: relative;
+}
+.head-with-bottom-border::after, .head-with-bottom-border::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--color);
+  transform: rotate(45deg);
+  background-color: #FFF;
+  bottom: -9px;
+}
+.head-with-bottom-border::before {
+  left: -15px;
+}
+.head-with-bottom-border::after {
+  right: -15px;
+}
+
+.desc {
+  --color: transparent;
+  position: relative;
+}
+.desc li {
+  display: inline-block;
+}
+.desc li span.desc-top {
+  position: absolute;
+  top: -45px;
+  margin-left: 20px;
+  z-index: 3;
+  background-color: #FFF;
+  padding: 5px 15px;
+  box-shadow: 1px 9px 12px -7px var(--color);
+  border-radius: 15px;
+}
+.desc li span.desc-top::before {
+  content: "";
+  display: block;
+  border: 8px solid;
+  border-color: var(--color) transparent transparent;
+  position: absolute;
+  bottom: -16px;
+  left: 20px;
+}
+
+/*# sourceMappingURL=skills.component.css.map */

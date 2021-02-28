@@ -1,0 +1,19 @@
+@import '../../../../../assets/css/own/helpers/mixins';
+
+.image {
+  position: relative;
+  img {
+    @include prefexir(box-shadow, 5px 10px 35px #333);
+    @include prefexir(border-radius, 10px);
+  }
+  span {
+    position: absolute;
+    z-index: 1;
+    background-color: #313131;
+    color: #FFF;
+    right: 15px;
+    top: 30px;
+    padding: 5px 15px;
+    @include prefexir(border-radius, 15px 0 0);
+  }
+}

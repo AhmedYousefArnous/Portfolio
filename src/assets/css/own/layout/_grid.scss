@@ -1,0 +1,11 @@
+* {
+    @include prefexir(box-sizing, border-box);   
+}
+
+// classes  padding/margin
+// @for $i from 4 through 30{
+//     @each $dir in $dirs {
+//         .padding-#{$i * 5 }-#{$dir} {padding-top: $i * 5px} 
+//         .margin-#{$i * 5 }-#{$dir} {margin-top: $i * 5px} 
+//     }
+// }

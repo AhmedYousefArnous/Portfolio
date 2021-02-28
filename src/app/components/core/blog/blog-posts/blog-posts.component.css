@@ -1,0 +1,67 @@
+.links {
+  --color: transparent;
+}
+.links li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 3px 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px 10px -3px var(--color);
+  -moz-box-shadow: 0 3px 10px -3px var(--color);
+  -ms-box-shadow: 0 3px 10px -3px var(--color);
+  -o-box-shadow: 0 3px 10px -3px var(--color);
+  box-shadow: 0 3px 10px -3px var(--color);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.links li:first-of-type, .links li:hover {
+  background-color: var(--color);
+  color: #FFF;
+}
+
+.image-container {
+  position: relative;
+  max-height: 300px;
+  -webkit-box-shadow: 3px 3px 5px #333;
+  -moz-box-shadow: 3px 3px 5px #333;
+  -ms-box-shadow: 3px 3px 5px #333;
+  -o-box-shadow: 3px 3px 5px #333;
+  box-shadow: 3px 3px 5px #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-container .desc {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #FFF;
+}
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/*# sourceMappingURL=blog-posts.component.css.map */

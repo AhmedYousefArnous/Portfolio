@@ -1,0 +1,26 @@
+.card-container {
+  position: relative;
+  z-index: 2;
+  top: -70px;
+  background-color: #FFF;
+  -webkit-box-shadow: 5px 5px 50px -10px #333;
+  -moz-box-shadow: 5px 5px 50px -10px #333;
+  -ms-box-shadow: 5px 5px 50px -10px #333;
+  -o-box-shadow: 5px 5px 50px -10px #333;
+  box-shadow: 5px 5px 50px -10px #333;
+}
+.card-container .personal-image {
+  position: relative;
+  top: -130px;
+}
+.card-container .description {
+  margin-top: -70px;
+}
+.card-container .description h1 {
+  font-size: 3rem;
+}
+.card-container .description p {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=core.component.css.map */

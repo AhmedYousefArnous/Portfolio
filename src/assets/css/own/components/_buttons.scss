@@ -1,0 +1,71 @@
+/* buttons */
+.btn {
+    position: relative;
+    padding: 5px 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    @include transitionMe(0.3);
+    cursor: pointer;
+    i {
+        font-size: 20px;
+    }
+}
+$btns-types: (leaf:25px 0,round:25px,icon:50%); 
+@each $key,$val in $btns-types {
+    .btn-#{$key} {
+        @include prefexir ( border-radius, $val);        
+    }
+}
+
+
+
+.btn-sm {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+$btns-types-sm: (leaf:12px 0,round:25px); 
+@each $key,$val in $btns-types-sm {
+    .btn-#{$key}-sm {
+        @include prefexir ( border-radius, $val);        
+    }
+}
+
+
+.btn-lg {
+    padding: 3px 20px;
+    font-size: 2.1rem;
+    font-weight: 500
+}
+
+$btns-types-lg: (leaf:35px 0,round:35px); 
+@each $key,$val in $btns-types-lg {
+    .btn-#{$key}-lg {
+        @include prefexir ( border-radius, $val);        
+    }
+}
+
+  
+@each $key,$val in $colors-list {
+    .btn-#{$key}
+        {
+            background-color: #{$val};
+            color: #FFF !important;
+            @include prefexir(box-shadow, 1px 1px 3px #{$val});
+            &:hover {
+                color: #{$val} !important;
+                @include prefexir(box-shadow, ( 1px 9px 12px -7px #{$val}, 0px 0px 10px -5px #{$val} ));
+                background-color: #FFF;
+            
+            }
+            @if ($key == white) {
+                color: #333 !important;
+                @include prefexir(box-shadow, ( 1px 9px 12px -7px #333, 0px 0px 10px -5px #333 ));
+                &:hover {
+                    color: #333 !important;
+                }
+            }
+    
+        }
+}
